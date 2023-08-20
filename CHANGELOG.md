@@ -1,3 +1,19 @@
+# 📦 anush008/release changelog
+
+[![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
+
+> All notable changes to this project will be documented in this file
+
+## [2.2.0](https://github.com/Anush008/release/compare/v2.1.1...v2.2.0) (2023-08-20)
+
+
+### 🍕 Features
+
+* trigger ([f5b8c17](https://github.com/Anush008/release/commit/f5b8c178e55d0a7d3995d202bc043b5bf71d1ef3))
+* trigger 2 ([1a3cae8](https://github.com/Anush008/release/commit/1a3cae890ef14d532531623a5dd2b7af05ac288e))
+* typo trigger ([be6489e](https://github.com/Anush008/release/commit/be6489e73b92c87abcb2930ebcfef1986ae64af8))
+
 # 📦 open-sauced/release changelog
 
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
