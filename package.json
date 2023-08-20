@@ -2,6 +2,7 @@
   "name": "@open-sauced/release",
   "version": "2.1.1",
   "license": "MIT",
+  "private": true,
   "files": [
     "release.config.js"
   ],
@@ -14,7 +15,7 @@
   "bugs": "https://github.com/open-sauced/release/issues",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/open-sauced/release.git"
+    "url": "git+ssh://git@github.com/Anush008/release.git"
   },
   "peerDependencies": {
     "semantic-release": ">=21.0.0"
