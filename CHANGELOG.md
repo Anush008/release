@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [2.4.0](https://github.com/Anush008/release/compare/v2.3.0...v2.4.0) (2023-08-20)
+
+
+### 🍕 Features
+
+* npm package root path ([7048dd6](https://github.com/Anush008/release/commit/7048dd650ff4a3b6e6938cf73f96d3551c4921ca))
+
 ## [2.3.0](https://github.com/Anush008/release/compare/v2.2.0...v2.3.0) (2023-08-20)
 
 
