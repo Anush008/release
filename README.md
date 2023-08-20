@@ -1,7 +1,7 @@
 <div style="text-align: center" align="center">
   <img alt="Open Sauced" src="https://i.ibb.co/7jPXt0Z/logo1-92f1a87f.png" width="300px" />
 
-# @open-sauced/release
+# @open-sauced/release!
 
 > [**semantic-release**](https://github.com/semantic-release/semantic-release) shareable config to publish to `npm` and/or `ghcr`.
 > now with alpha and beta pre-releases 
