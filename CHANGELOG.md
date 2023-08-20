@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [2.3.0](https://github.com/Anush008/release/compare/v2.2.0...v2.3.0) (2023-08-20)
+
+
+### 🍕 Features
+
+* Update README.md ([869bd74](https://github.com/Anush008/release/commit/869bd743516743b52bf2dd8ac5208af8e4489d5d))
+
 ## [2.2.0](https://github.com/Anush008/release/compare/v2.1.1...v2.2.0) (2023-08-20)
 
 
