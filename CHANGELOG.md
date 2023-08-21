@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [2.6.0](https://github.com/Anush008/release/compare/v2.5.0...v2.6.0) (2023-08-21)
+
+
+### 🍕 Features
+
+* bump PKG ./ ([bc769e7](https://github.com/Anush008/release/commit/bc769e7815bc404d86ec9aff54b3e8458b2e32d0))
+
 ## [2.5.0](https://github.com/Anush008/release/compare/v2.4.0...v2.5.0) (2023-08-21)
 
 
