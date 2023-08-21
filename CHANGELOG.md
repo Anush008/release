@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [2.5.0](https://github.com/Anush008/release/compare/v2.4.0...v2.5.0) (2023-08-21)
+
+
+### 🍕 Features
+
+* commit pkg json ([6959f26](https://github.com/Anush008/release/commit/6959f260f9a204ac2d2f07f97c5a7a0a7bdce42a))
+
 ## [2.4.0](https://github.com/Anush008/release/compare/v2.3.0...v2.4.0) (2023-08-20)
 
 
