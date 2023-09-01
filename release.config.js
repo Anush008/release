@@ -39,7 +39,10 @@ const {
   GIT_COMMITTER_EMAIL,
   GIT_AUTHOR_NAME,
   GIT_AUTHOR_EMAIL,
-  NPM_PACKAGE_ROOT
+  NPM_PACKAGE_ROOT,
+  SKIP_DOCKER_PUBLISH = false,
+  SKIP_NPM_PUBLISH = false,
+  SKIP_CHANGELOG = false
 } = process.env;
 const [owner, repo] = String(GITHUB_REPOSITORY).toLowerCase().split("/");
 const addPlugin = (plugin, options) => {
@@ -109,16 +112,18 @@ addPlugin("@semantic-release/release-notes-generator", {
   }
 });
 
-addPlugin("@semantic-release/changelog", {
-  "changelogTitle": `# 📦 ${owner}/${repo} changelog
+if (!SKIP_CHANGELOG) {
+  addPlugin("@semantic-release/changelog", {
+        "changelogTitle": `# 📦 ${owner}/${repo} changelog
 
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 
 > All notable changes to this project will be documented in this file`
-});
+  });
+}
 
-if (process.env.SKIP_NPM_PUBLISH === undefined) {
+if (!SKIP_NPM_PUBLISH) {
   const pkgRoot = NPM_PACKAGE_ROOT || ".";
   addPlugin("@semantic-release/npm", {
     tarballDir: "pack",
@@ -166,7 +171,7 @@ if (manifestExists && GITHUB_REF === "refs/heads/main") {
   });
 }
 
-if (process.env.SKIP_NPM_PUBLISH === undefined) {
+if (!SKIP_NPM_PUBLISH) {
   const packageFilesPrefix = process.env.NPM_PACKAGE_ROOT ? `${process.env.NPM_PACKAGE_ROOT}/` : "";
   addPlugin("@semantic-release/git", {
     "assets": [
@@ -197,7 +202,7 @@ addPlugin("@semantic-release/github", {
 });
 
 const dockerExists = existsSync("./Dockerfile");
-if (dockerExists && process.env.SKIP_DOCKER_PUBLISH === undefined) {
+if (dockerExists && !SKIP_DOCKER_PUBLISH) {
   addPlugin("eclass-docker-fork", {
     "baseImageName": `${owner}/${repo}`,
     "registries": [
