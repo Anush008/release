@@ -20,7 +20,7 @@
     "semantic-release": ">=21.0.0"
   },
   "dependencies": {
-    "@google/semantic-release-replace-plugin": "^1.2.0",
+    "@google/semantic-release-replace-plugin": "^1.2.7",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/exec": "^6.0.3",
